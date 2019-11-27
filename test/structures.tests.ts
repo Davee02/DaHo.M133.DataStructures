@@ -3,7 +3,7 @@ import { Queue } from "../lib/Queue";
 
 describe("Data structures", () => {
     describe("Queue", () => {
-        it("has size", () => {
+        it("empty queue has zero size", () => {
             const testee = new Queue();
             const result = testee.size();
             expect(result).to.equal(0);
