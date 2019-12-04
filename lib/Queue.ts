@@ -6,4 +6,8 @@ export class Queue<T> implements IDataScructure {
     public size(): number {
         return this.values.length;
     }
+
+    public enqueue(value: T): void {
+        this.values.push(value);
+    }
 }
