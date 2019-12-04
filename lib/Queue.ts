@@ -1,6 +1,6 @@
 import { IDataScructure } from "./IDataStructure";
 
-export class Queue<T> implements IDataScructure {
+export class Queue<T> implements IDataScructure<T> {
     values: Array<T> = new Array<T>();
 
     public size(): number {
