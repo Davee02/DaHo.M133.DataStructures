@@ -56,17 +56,41 @@ describe("Data structures", () => {
             testee.enqueue(11);
             testee.enqueue(22);
             testee.enqueue(33);
+            testee.peek();
             const result = testee.size();
 
             expect(result).to.equal(3);
         })
+
+        it("poll item returns first added value", () => {
+            const testee = new Queue<number>();
+
+            testee.enqueue(11);
+            testee.enqueue(22);
+            testee.enqueue(33);
+            const result = testee.poll();
+
+            expect(result).to.equal(11);
+        })
+
+        it("poll item returns does affect size", () => {
+            const testee = new Queue<number>();
+
+            testee.enqueue(11);
+            testee.enqueue(22);
+            testee.enqueue(33);
+            testee.poll();
+            const result = testee.size();
+
+            expect(result).to.equal(2);
+        })
     })
 
-    // describe("Factory", () => {
-    //     it("can create Queue", () => {
-    //         const structureType = DataStructures.Queue;
-    //         const result = DataStructureFactory.create(structureType);
-    //         expect(result).to.be.an.instanceOf(Queue);
-    //     })
-    // })
+    describe("Factory", () => {
+        it("can create Queue", () => {
+            const structureType = DataStructures.Queue;
+            const result = DataStructureFactory.create(structureType);
+            expect(result).to.be.an.instanceOf(Queue);
+        })
+    })
 })

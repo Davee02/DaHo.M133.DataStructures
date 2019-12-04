@@ -18,4 +18,8 @@ export class Queue<T> implements IDataScructure {
     public peek(): T {
         return this.values[0];
     }
+
+    public poll(): T {
+        return this.values.shift();
+    }
 }
