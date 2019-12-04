@@ -1,4 +1,4 @@
-export interface IDataScructure<T> {
+export interface IDataStructure<T> {
     size(): number;
     isEmpty(): boolean;
     enqueue(value: T): void;

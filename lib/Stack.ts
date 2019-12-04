@@ -1,6 +1,6 @@
-import { IDataScructure } from "./IDataStructure";
+import { IDataStructure } from "./IDataStructure";
 
-export class Stack<T> implements IDataScructure<T> {
+export class Stack<T> implements IDataStructure<T> {
     values: Array<T> = new Array<T>();
 
     public size(): number {
