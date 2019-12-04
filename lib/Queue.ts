@@ -10,4 +10,8 @@ export class Queue<T> implements IDataScructure {
     public enqueue(value: T): void {
         this.values.push(value);
     }
+
+    public peek(): T {
+        return this.values[0];
+    }
 }
