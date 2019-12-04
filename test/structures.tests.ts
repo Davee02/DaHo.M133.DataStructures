@@ -11,6 +11,23 @@ describe("Data structures", () => {
             expect(result).to.equal(0);
         })
 
+        it("non-empty queue returns false isEmpty", () => {
+            const testee = new Queue<number>();
+
+            testee.enqueue(15);
+            const result = testee.isEmpty();
+
+            expect(result).to.be.false;
+        })
+
+        it("empty queue returns true isEmpty", () => {
+            const testee = new Queue<number>();
+
+            const result = testee.isEmpty();
+
+            expect(result).to.be.true;
+        })
+
         it("enqueue item increases size", () => {
             const testee = new Queue<number>();
 
