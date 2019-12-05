@@ -20,6 +20,6 @@ export class Stack<T> implements IDataStructure<T> {
     }
 
     public poll(): T {
-        return this.values.pop();
+        return <T>this.values.pop();
     }
 }

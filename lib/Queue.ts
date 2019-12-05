@@ -20,6 +20,6 @@ export class Queue<T> implements IDataStructure<T> {
     }
 
     public poll(): T {
-        return this.values.shift();
+        return <T>this.values.shift();
     }
 }
