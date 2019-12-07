@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>M133 - TypeScript Datastructures</title>
 </head>
+
 <body>
-    
+    <div>
+        <p>Select a datastructure:</p>
+        <div>
+            <input type="radio" name="datastructure" value="queue" id="queue">
+            <label for="queue">Queue</label>
+        </div>
+        <div>
+            <input type="radio" name="datastructure" value="stack" id="stack">
+            <label for="stack">Stack</label>
+        </div>
+        <div>
+            <button id="set-datastructure">Set datastructure</button>
+        </div>
+    </div>
+
+    <hr>
+    <div>
+
+        <div>
+            <label for="value-to-add">Input a value:</label>
+            <input type="text" name="value-to-add" id="value-to-add">
+        </div>
+        <button id="add-value">Add the value</button>
+    </div>
+
+    <hr>
+
+    <div>
+        <div>
+            <button id="peek">Peek</button>
+            <button id="poll">Poll</button>
+        </div>
+        <input type="text" name="output" id="output" readonly>
+    </div>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
